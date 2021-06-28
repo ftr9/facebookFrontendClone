@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+*,*::before,*::after{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: white;
+    min-height: 100vh;
+    background-color: #18191A;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*UIS*/
+.chipAvatar{
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    border-radius: 10rem;
+    padding: 0 1.2rem 0 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.chipAvatar__image img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chipAvatar:hover{
+    background-color:rgb(65, 65, 65);
+}
+
+/*card avatar*/
+.cardAvatar{
+    display: flex;
+    padding: 1rem .5rem;
+    font-size: 1.6rem;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+
+.cardAvatar p{
+    margin-left: 1.5rem;
+}
+.cardAvatar:hover{
+    background-color:rgb(65, 65, 65);
+}
+
+.cardAvatar div img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.cardAvatar img{
+    height: 3.2rem;
+    width: 3.2rem;
 }
